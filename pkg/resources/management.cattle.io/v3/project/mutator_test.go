@@ -188,7 +188,7 @@ func TestAdmit(t *testing.T) {
 				p.Annotations = map[string]string{
 					"authz.management.cattle.io/creator-role-bindings": "{\"required\":[\"project-owner\"]}",
 				}
-				p.Status.BackingNamespace = "testcluster-testproject"
+				p.Status.BackingNamespace = ""
 				return p
 			},
 			projectNamespaceSetting: "false",
